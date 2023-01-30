@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styleTabla.css">
+    <title>Ejemplo</title>
+</head>
+
+<body>
+    <table id="tabla">
+        <thead>
+            <caption>
+                <h1>HORARIO DE CLASES</h1> 
+            </caption>
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <th>7:00</th>
+                <td id="espacioLibre"></td>
+                <td rowspan="4" id="materia"> Matemática Financiera</td>
+                <td rowspan="12" id="espacioLibre"></td>
+                <td rowspan="2" id="espacioLibre"></td>
+                <td rowspan="4" id="materia">Habilidades para el desarrollo profesional</td>
+            </tr>
+            <tr>
+                <th>8:00 </th>
+                <td rowspan="5" id="materia">Informática Aplicada</td>
+            </tr>
+            <tr>
+                <th>9:00</th>
+                <td rowspan="5" id="materia">Analisis y Diseño de S.I</td>
+            </tr>
+            <tr>
+                <th>10:00</th>
+            </tr>
+            <tr>
+                <th>11:00</th>
+                <td rowspan="3" id="materia">Programación y Diseño Web</td>
+                <td rowspan="3" id="materia">Programación y Diseño Web</td>
+            </tr>
+            <tr>
+                <th>12:00</th>
+
+            </tr>
+            <tr>
+                <th>01:00</th>
+                <td id="espacioLibre"></td>
+            </tr>
+            <tr>
+                <th>02:00</th>
+                <td rowspan="5" id="materia">Microeconomía</td>
+                <td rowspan="5" id="espacioLibre"></td>
+                <td rowspan="5" id="espacioLibre"></td>
+                <td rowspan="5" id="espacioLibre"></td>
+
+            </tr>
+            <tr>
+                <th>03:00</th>
+            </tr>
+            <tr>
+                <th>04:00</th>
+            </tr>
+            <tr>
+                <th>05:00</th>
+            </tr>
+            <tr>
+                <th>06:00</th>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6" id="foot">
+                    <strong>Ing. De Software Promoción 13B</strong>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
