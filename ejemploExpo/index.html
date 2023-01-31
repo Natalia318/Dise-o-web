@@ -10,174 +10,162 @@
 </head>
 
 <body>
-  <nav class="navbar" role="navigation" arial-label="main navigation">
-    <div class="navbar-brand">
+  
+  <nav class="navbar ">
+    <!--logo / brand-->
+    <div class="navbar-brand ">
       <a class="navbar-item" href="https://bulma.io">
-        <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" alt="logo Bulma">
+        <img src="https://bulma.io/images/bulma-logo.png" alt="logo Bulma">
       </a>
     </div>
-
-    <div id="navbarBasicExample" class="navbar-menu">
+    <!--items / menu-->
+    <div class="navbar-menu ">
       <div class="navbar-start">
-        <a class="navbar-item"> ¿Qué es?</a>
-        <a class="navbar-item">Historia</a>
+        <a class="navbar-item" href="#Info"> ¿Qué es?</a>
+        <a class="navbar-item" href="#aprebder">Aprender</a>
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link">Más</a>
           <div class="navbar-dropdown">
-            <a class="navbar-item">Elementos</a>
+            <button class="js-modal-trigger" data-target="modal-js-example">
+              Open JS example modal
+            </button>
           </div>
         </div>
       </div>
 
       <div class="navbar-end">
         <div class="navbar-item">
-            <a class="button is-dark" href="https://github.com/jgthms/bulma/releases/download/0.9.4/bulma-0.9.4.zip">
-              <strong >Descargar</strong>
-            </a>
+          <a class="button is-dark" href="https://github.com/jgthms/bulma/releases/download/0.9.4/bulma-0.9.4.zip">
+            <strong>Descargar</strong>
+          </a>
         </div>
       </div>
     </div>
   </nav>
   <main>
-    <section class="section">
-      <div class="container">
+
+    <div class="container">
+      <section class="section" id="Info">
         <h1 class="title">
           Conociendo Bulma
         </h1>
+        <figure class="image image is-6by2">
+          <img src="https://bulma.io/images/bulma-banner.png">
+        </figure>
         <p class="subtitle">
-          Un enfoque estricto, solo de CSS y valores predeterminados elegantes, <strong>3<sup>ro</sup>  en el ranking de frameworks</strong>!
+          Un enfoque estricto, solo de CSS y valores
+          predeterminados elegantes, <strong>3<sup>ro</sup>
+            en el ranking de frameworks</strong>! </p>
+        <p>
+          Bulma es un framework basado en Flexbox, en el
+          que sólo necesitas un archivo CSS para comenzar
+          a utilizarlo en mtus proyectos o puedes optar
+          por la versión en la que descargas los
+          archivos Sass y modificar las variables a
+          tu gusto.
+
+          En Bulma no existe ningún archivo JavaScript,
+          así que lo puedes usar tranquilamente sin
+          necesidad de ninguna librería o plugin extra.
         </p>
-      </div>
-    </section>
-    <section class="section">
-      <div class="columns">
-        <div class="column">
-          <div class="card">
-            <div class="card-image">
-              <figure class="image is-4by3">
-                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-              </figure>
-            </div>
-            <div class="card-content">
-              <div class="media">
-                <div class="media-left">
-                  <figure class="image is-48x48">
-                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                  </figure>
-                </div>
-                <div class="media-content">
-                  <p class="title is-4">John Smith</p>
-                  <p class="subtitle is-6">@johnsmith</p>
-                </div>
-              </div>
-          
-              <div class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                <a href="#">#css</a> <a href="#">#responsive</a>
-                <br>
-                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="column">
-          <div class="card">
-            <div class="card-image">
-              <figure class="image is-4by3">
-                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-              </figure>
-            </div>
-            <div class="card-content">
-              <div class="media">
-                <div class="media-left">
-                  <figure class="image is-48x48">
-                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                  </figure>
-                </div>
-                <div class="media-content">
-                  <p class="title is-4">John Smith</p>
-                  <p class="subtitle is-6">@johnsmith</p>
-                </div>
-              </div>
-          
-              <div class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                <a href="#">#css</a> <a href="#">#responsive</a>
-                <br>
-                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="column">
-          <div class="card">
-            <div class="card-image">
-              <figure class="image is-4by3">
-                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-              </figure>
-            </div>
-            <div class="card-content">
-              <div class="media">
-                <div class="media-left">
-                  <figure class="image is-48x48">
-                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                  </figure>
-                </div>
-                <div class="media-content">
-                  <p class="title is-4">John Smith</p>
-                  <p class="subtitle is-6">@johnsmith</p>
-                </div>
-              </div>
-          
-              <div class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                <a href="#">#css</a> <a href="#">#responsive</a>
-                <br>
-                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="column">
-          <div class="card">
-            <div class="card-image">
-              <figure class="image is-4by3">
-                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-              </figure>
-            </div>
-            <div class="card-content">
-              <div class="media">
-                <div class="media-left">
-                  <figure class="image is-48x48">
-                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                  </figure>
-                </div>
-                <div class="media-content">
-                  <p class="title is-4">John Smith</p>
-                  <p class="subtitle is-6">@johnsmith</p>
-                </div>
-              </div>
-          
-              <div class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                <a href="#">#css</a> <a href="#">#responsive</a>
-                <br>
-                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  
 
+      </section>
+      <section class="section" id="aprender">
 
-    </section>
-   
-  </main> 
+        <div class="container">
+          <p class="subtitle">
+            Canales donde puedes encontar Información sobre Bulma
+          </p>
+
+          <!--columnas-->
+          <div class="columns">
+          <!--Primera columna, si no le pones 
+          tamaño se pone en auto y todas las 
+          columnas tienen mismo tamaño-->
+            <div class="column">
+              <!--card-->
+              <div class="card">
+                <!--Imagen-->
+                <div class="card-image">
+                  <figure class="image is-7by4 is-center">
+                    <img src="https://i.blogs.es/30ba5b/youtube/1366_2000.jpg" alt="NinjaChannel">
+                  </figure>
+                </div>
+                <!--Contenido de card-->
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content">
+                      <p class="title is-4">The Net Ninja</p>
+                      <p class="subtitle is-6">@NetNinja</p>
+                    </div>
+                  </div>
+                  <div class="content">
+                    En este canal puedes encontar una serie de 
+                    videos que te ayudara a iniciar con Bulma.
+                    <a href="https://acortar.link/idOOxu">BulmaCSS Tutorial</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="card">
+                <!--Imagen-->
+                <div class="card-image">
+                  <figure class="image is-7by4 is-center">
+                    <img src="https://i.blogs.es/30ba5b/youtube/1366_2000.jpg" alt="NinjaChannel">
+                  </figure>
+                </div>
+                <!--Contenido de card-->
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content">
+                      <p class="title is-4">freeCodeCamp.org </p>
+                      <p class="subtitle is-6">@freeCodeCamp</p>
+                    </div>
+                  </div>
+                  <div class="content">
+                    En este canal puedes encontar un video que 
+                    te explicara todo de Bulma.
+                    <br>
+                    <a href="https://acortar.link/idOOxu">
+                      Bulma CSS Framework - complete tutorial</a>
+                  </div>
+                </div>
+            </div>
+          </div>
+            <div class="column">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-7by4">
+                    <img src="https://i.blogs.es/30ba5b/youtube/1366_2000.jpg" alt="Placeholder image">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content">
+                      <p class="title is-4">John Smith</p>
+                      <p class="subtitle is-6">@johnsmith</p>
+                    </div>
+                  </div>
+
+                  <div class="content">
+                    En este canal puedes encontar una serie de 
+                    videos que te ayudara a iniciar con Bulma.
+                    <a href="https://acortar.link/idOOxu">BulmaCSS Tutorial</a>
+                   
+                    <a href="#">#css</a> <a href="#">#responsive</a>
+                    <br>
+                 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+    </div>
+    
+  </main>
   <footer class="footer">
     <div class="content has-text-centered">
       <p>
